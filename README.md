@@ -51,11 +51,11 @@ API Documentation for the ISS API is at [https://swapi.co/documentation](https:/
 * When the user clicks the button, the 'opening crawl' should be appear on the page.
   _NOTE: The ID for Episode 4 is 1_
 
-2.  Star Wars Vehicles
+2.  Star Wars Planets
 
-* Add a number input that takes in a number (only the numbers 1 through 38 are valid vehicle ids, so think about some way of validating the number)
+* Add a number input that takes in a number (only the numbers 1 through 60 are valid planet ids, so think about some way of validating the number)
 * Fetch that vehicle's data from the correct url
-* Show the name and model of the vehicle on the screen
+* Show the name and climate of the planet on the screen
 
 3.  These Are The Droids You're Looking For
 
@@ -63,6 +63,7 @@ API Documentation for the ISS API is at [https://swapi.co/documentation](https:/
 * Show each droid's name, height, and mass on the screen
 * Display a button for each droid that reads 'Show Homeworld Details'
 * On click, this button should fetch to the api _again_ to get information about the planet
+
   * Things to consider:
 
     * What information do you need from the first fetch to make the second?
