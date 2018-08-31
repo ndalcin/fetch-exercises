@@ -54,7 +54,7 @@ API Documentation for the ISS API is at [https://swapi.co/documentation](https:/
 2.  Star Wars Planets
 
 * Add a number input that takes in a number (only the numbers 1 through 60 are valid planet ids, so think about some way of validating the number)
-* Fetch that vehicle's data from the correct url
+* Fetch that planet's data from the correct url
 * Show the name and climate of the planet on the screen
 
 3.  These Are The Droids You're Looking For
