@@ -29,7 +29,7 @@ We add a handler for the data with `then`.
 promiseForData.then(response => response.json())
 ```
 
-This is similar to attaching an event handler to handle a DOM event! When the result 'happens' - when Open Notify responds to the HTTP request with some data - we want to do something with that data. `then` is the way we specify what should happen when the promise resolves.
+This is similar to attaching an event handler to handle a DOM event! When the result 'happens' - when SWAPI responds to the HTTP request with some data - we want to do something with that data. `then` is the way we specify what should happen when the promise resolves.
 
 In this case, we want to parse the body of the response as JSON, so we call the `.json()` method. `then()` returns a promise, and _that_ promise's handler will get the parsed JSON as input.
 
