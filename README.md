@@ -43,7 +43,7 @@ promiseForData
 
 _SWAPI_
 
-API Documentation for the ISS API is at [https://swapi.co/documentation](https://swapi.co/documentation)
+API Documentation for SWAPI is at [https://swapi.co/documentation](https://swapi.co/documentation)
 
 1.  Star Wars Episode 4 (Film #1)
 
