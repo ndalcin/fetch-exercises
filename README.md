@@ -47,20 +47,20 @@ API Documentation for SWAPI is at [https://swapi.co/documentation](https://swapi
 
 1.  Star Wars Episode 4 (Film #1)
 
-* Add a button "Opening Crawl for Episode 4".
-* When the user clicks the button, the 'opening crawl' should be appear on the page.
+* When the user clicks the button "Opening Crawl for Episode 4", you should fetch the data from the correct URL 
   _NOTE: The ID for Episode 4 is 1_
+ * When the promise is resolved, the 'opening crawl' should be appear on the page in the `#crawl-div`
 
 2.  Star Wars Planets
 
-* Add a number input that takes in a number (only the numbers 1 through 60 are valid planet ids, so think about some way of validating the number)
+* Using the input form, a user should choose a number corresponding to some planet (only the numbers 1 through 60 are valid planet ids, so think about some way of validating the number)
 * Fetch that planet's data from the correct url
-* Show the name and climate of the planet on the screen
+* Display the name and climate of the planet in the `#planets-div`
 
 3.  These Are The Droids You're Looking For
 
-* When the page loads, fetch the data for C-3P0 (id: 2) and R2-D2 (id: 3)
-* Show each droid's name, height, and mass on the screen
+* When the page loads, fetch the data for the characters C-3P0 (id: 2) and R2-D2 (id: 3)
+* Show each droid's name, height, and mass on the screen in the `#droids-div`
 * Display a button for each droid that reads 'Show Homeworld Details'
 * On click, this button should fetch to the api _again_ to get information about the planet
   * Things to consider:
