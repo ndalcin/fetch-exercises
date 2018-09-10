@@ -2,32 +2,51 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Fetch Practice</title>
+    <title></title>
   </head>
   <body>
-    <h1> SWAPI </h1>
-    <div class="star-wars-opening-crawl">
-      <button id="crawl-btn">Show Opening Crawl</button>
-      <div id="crawl-div"></div>
-    </div>
-
-
-    <div class="star-wars-planets">
-      <form id="planet-form">
-        <input type="text" id="planet-input"/>
-        <button type="submit">Find Planet</button>
+    <div style="float:left">
+      <h1>SWAPI Exercises</h1>
+      <h2>Opening Crawl</h2>
+      <button id="crawlbtn">Opening Crawl Episode 4</button>
+      <div id="crawldiv"></div>
+      </br>
+      </br>
+      <h2>Planet Search</h2>
+      <form id="planetForm">
+        <input id="planetInput" type="text" placeholder="enter planet number"/>
       </form>
-      <div id="planets-div"></div>
+      <div id="planetData"></div>
+      </br>
+      </br>
+      <h2>Find These Droids:</h2>
+      <div id="droidData"></div>
     </div>
+    <div style="float:right">
+      <h1>Numbers API Exercises</h1>
+      <h2>Number One</h2>
+      <button id="number-one">Facts About 1</button>
+      <div id="one-facts">
 
+      </div>
+      </br>
+      <h2>Pick a Number, Any Number</h2>
+      <input id="pickAnumber" type="text" placeholder="enter a number"/>
+      <div id="random-math-fact">
 
-    <div class="find-the-droids">
-      <div id='droids-div'></div>
+      </div>
+      </br>
+      <h2>Those who fail to study history...</h2>
+      <div id="year-history">
+
+      </div>
+      </br>
+      <h2>All of the Numbers</h2>
+      <button id="all-numbers-button">All of the Numbers</button>
+      
+
     </div>
-
-    <h2>Numbers</h2>
-
-    
     <script type="text/javascript" src="index.js"></script>
+
   </body>
 </html>
