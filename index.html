@@ -2,51 +2,55 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>SWAPI & Numbers Fetch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
   </head>
   <body>
-    <div style="float:left">
-      <h1>SWAPI Exercises</h1>
-      <h2>Opening Crawl</h2>
-      <button id="crawlbtn">Opening Crawl Episode 4</button>
-      <div id="crawldiv"></div>
-      </br>
-      </br>
-      <h2>Planet Search</h2>
-      <form id="planetForm">
-        <input id="planetInput" type="text" placeholder="enter planet number"/>
-      </form>
-      <div id="planetData"></div>
-      </br>
-      </br>
-      <h2>Find These Droids:</h2>
-      <div id="droidData"></div>
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="eight wide column">
+        <h1>SWAPI Exercises</h1>
+        <h2>Episode 4 Opening Crawl</h2>
+        <button id="crawlBtn">Get Opening Crawl</button>
+        <div id="crawlDiv"></div>
+
+        <h2>Planet Search</h2>
+        <form id="planetForm">
+          <input id="planetInput" type="text" placeholder="enter planet number"/>
+          <button type="submit">Find Planet!</button>
+        </form>
+        <div id="planetData"></div>
+
+        <h2>Find These Droids:</h2>
+        <div id="droidData"></div>
+      </div>
+
+      <div class="eight wide column">
+        <h1>Numbers API Exercises</h1>
+        <h2>Number One</h2>
+        <button id="number-one">Facts About 1</button>
+        <div id="one-facts">
+
+        </div>
+        </br>
+        <h2>Pick a Number, Any Number</h2>
+        <input id="pick-a-number" type="text" placeholder="enter a number"/>
+        <div id="random-math-fact">
+
+        </div>
+        </br>
+        <h2>Those who fail to study history...</h2>
+        <div id="year-history">
+
+        </div>
+        </br>
+        <h2>All of the Numbers</h2>
+        <button id="all-numbers-button">All of the Numbers</button>
+        <div id="all-the-numbers"></div>
+      </div>
     </div>
-    <div style="float:right">
-      <h1>Numbers API Exercises</h1>
-      <h2>Number One</h2>
-      <button id="number-one">Facts About 1</button>
-      <div id="one-facts">
-
-      </div>
-      </br>
-      <h2>Pick a Number, Any Number</h2>
-      <input id="pickAnumber" type="text" placeholder="enter a number"/>
-      <div id="random-math-fact">
-
-      </div>
-      </br>
-      <h2>Those who fail to study history...</h2>
-      <div id="year-history">
-
-      </div>
-      </br>
-      <h2>All of the Numbers</h2>
-      <button id="all-numbers-button">All of the Numbers</button>
-      
-
     </div>
-    <script type="text/javascript" src="index.js"></script>
-
+    <script type="text/javascript" src="swapi.js"></script>
+    <script type="text/javascript" src="numbers.js"></script>
   </body>
 </html>
