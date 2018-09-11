@@ -29,7 +29,7 @@ We add a handler for the data with `then`.
 promiseForData.then(response => response.json())
 ```
 
-This is similar to attaching an event handler to handle a DOM event! When the result 'happens' - when Open Notify responds to the HTTP request with some data - we want to do something with that data. `then` is the way we specify what should happen when the promise resolves.
+This is similar to attaching an event handler to handle a DOM event! When the result 'happens' - when SWAPI responds to the HTTP request with some data - we want to do something with that data. `then` is the way we specify what should happen when the promise resolves.
 
 In this case, we want to parse the body of the response as JSON, so we call the `.json()` method. `then()` returns a promise, and _that_ promise's handler will get the parsed JSON as input.
 
@@ -43,24 +43,24 @@ promiseForData
 
 _SWAPI_
 
-API Documentation for the ISS API is at [https://swapi.co/documentation](https://swapi.co/documentation)
+API Documentation for SWAPI is at [https://swapi.co/documentation](https://swapi.co/documentation)
 
-1.  Star Wars Episode 4 (Film #1)
+1.  Opening Crawl - Star Wars Episode 4 (Film #1)
 
-* Add a button "Opening Crawl for Episode 4".
-* When the user clicks the button, the 'opening crawl' should be appear on the page.
+* When the user clicks the button "Get Opening Crawl", you should fetch the data from the correct URL
   _NOTE: The ID for Episode 4 is 1_
+ * When the promise is resolved, the 'opening crawl' should appear on the page in the `#crawlDiv`
 
 2.  Star Wars Planets
 
-* Add a number input that takes in a number (only the numbers 1 through 60 are valid planet ids, so think about some way of validating the number)
-* Fetch that vehicle's data from the correct url
-* Show the name and climate of the planet on the screen
+* Using the input form, a user should choose a number corresponding a some planet id (only the numbers 1 through 60 are valid planet ids, so think about some way of validating the number)
+* Fetch that planet's data from the correct url
+* Display the name and climate of the planet in the `#planetData`
 
 3.  These Are The Droids You're Looking For
 
-* When the page loads, fetch the data for C-3P0 (id: 2) and R2-D2 (id: 3)
-* Show each droid's name, height, and mass on the screen
+* When the page loads, fetch the data for the characters C-3P0 (id: 2) and R2-D2 (id: 3)
+* Show each droid's name, height, and mass on the screen in the `#droidData`
 * Display a button for each droid that reads 'Show Homeworld Details'
 * On click, this button should fetch to the api _again_ to get information about the planet
 
@@ -80,28 +80,29 @@ Let's nerd out.
 
 1.  Number One.
 
-* Build a button that fetches a piece of trivia about the number `1`
-* and adds the fact to the DOM.
+* When a user clicks on the button 'Facts About 1':
+  * fetch a random fact about the number 1
+  * Add the fact to the DOM in the `#one-facts` div
 
 2.  Pick a Number, Any Number.
 
-* Add an number input
-* On change, fetch a math fact about that number
-* Show it on the screen
+* When a user enters a number in the input:
+  * On change, fetch a math fact about that number
+  * Try adding a validation so that a user can't submit a non-number
+  * Show it on the screen in the `#random-math-fact` div
 
 3.  Those who fail to study history are doomed to repeat it
 
-* When the page loads, set an interval
-* Every 5 seconds, get a fact about a year and show it on the screen
-* Start with this year
-* Every 5 seconds, get the fact about the previous year
-* So, after 50 seconds, it should be 2008 or so
+* When the page loads, start an interval:
+  * Every 5 seconds, fetch a fact about a year and show it on the screen in the `#year-history` div
+  * Start with this year
+  * Every 5 seconds, get the fact about the previous year
 
 4.  All the numbers
 
-* Add a button 'All the Numbers'
-* When clicked, it should fetch facts for one hundred random numbers
-* And show them on the screen
+* When a user clicks the 'All of the Numbers' button
+  * fetch facts for one hundred random numbers
+  * append a div to `"#all-the-numbers"` to display all numbers and their fact
 
 🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓
 🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓

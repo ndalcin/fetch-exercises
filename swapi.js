@@ -1,5 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-  crawlButton = document.querySelector("#crawlbtn");
+  crawlButton = document.querySelector("#crawlBtn");
   crawlButton.addEventListener("click", getOpeningCrawl);
   planetSelector = document.querySelector("#planetForm");
   planetSelector.addEventListener("submit", getPlanet);
@@ -10,7 +11,7 @@ const getOpeningCrawl = () => {
   fetch("https://swapi.co/api/films/1/")
     .then(r => r.json())
     .then(d => {
-      crawlDiv = document.getElementById("crawldiv");
+      crawlDiv = document.getElementById("crawlDiv");
       crawlDiv.innerText = d.opening_crawl;
     });
 };
@@ -19,7 +20,6 @@ const getPlanet = e => {
   e.preventDefault();
   currentPlanet = parseInt(document.querySelector("#planetInput").value);
   planetData = document.getElementById("planetData");
-
   if (isNaN(currentPlanet)) {
     planetData.innerText = "please enter a number between 1 and 60";
   } else if (currentPlanet < 1 || currentPlanet > 60) {
@@ -48,7 +48,7 @@ const getDroids = () => {
             droidDiv.innerHTML += `<p><strong>Name:</strong> ${droid.name}</p>
           <p><strong>Height:</strong> ${droid.height}</p>
           <p><strong>Mass:</strong> ${droid.mass}</p>
-          <p><strong>Home Planet:</strong> ${planet.name}</p></br></br>`;
+          <p><strong>Home Planet:</strong> ${planet.name}</p></br>`;
           })
       )
   );
