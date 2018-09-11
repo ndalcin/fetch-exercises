@@ -45,15 +45,15 @@ _SWAPI_
 
 API Documentation for SWAPI is at [https://swapi.co/documentation](https://swapi.co/documentation)
 
-1.  Star Wars Episode 4 (Film #1)
+1.  Opening Crawl - Star Wars Episode 4 (Film #1)
 
-* When the user clicks the button "Opening Crawl for Episode 4", you should fetch the data from the correct URL
+* When the user clicks the button "Get Opening Crawl", you should fetch the data from the correct URL
   _NOTE: The ID for Episode 4 is 1_
- * When the promise is resolved, the 'opening crawl' should be appear on the page in the `#crawldiv`
+ * When the promise is resolved, the 'opening crawl' should appear on the page in the `#crawlDiv`
 
 2.  Star Wars Planets
 
-* Using the input form, a user should choose a number corresponding to some planet (only the numbers 1 through 60 are valid planet ids, so think about some way of validating the number)
+* Using the input form, a user should choose a number corresponding a some planet id (only the numbers 1 through 60 are valid planet ids, so think about some way of validating the number)
 * Fetch that planet's data from the correct url
 * Display the name and climate of the planet in the `#planetData`
 
@@ -63,6 +63,7 @@ API Documentation for SWAPI is at [https://swapi.co/documentation](https://swapi
 * Show each droid's name, height, and mass on the screen in the `#droidData`
 * Display a button for each droid that reads 'Show Homeworld Details'
 * On click, this button should fetch to the api _again_ to get information about the planet
+
   * Things to consider:
 
     * What information do you need from the first fetch to make the second?
@@ -87,7 +88,7 @@ Let's nerd out.
 
 * When a user enters a number in the input:
   * On change, fetch a math fact about that number
-  * Try adding a validation so that a user can't submit a non-number 
+  * Try adding a validation so that a user can't submit a non-number
   * Show it on the screen in the `#random-math-fact` div
 
 3.  Those who fail to study history are doomed to repeat it
@@ -101,7 +102,7 @@ Let's nerd out.
 
 * When a user clicks the 'All of the Numbers' button
   * fetch facts for one hundred random numbers
-  * add a div to the DOM to display all numbers and their fact
+  * append a div to `"#all-the-numbers"` to display all numbers and their fact
 
 🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓
 🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓🔢🤓
